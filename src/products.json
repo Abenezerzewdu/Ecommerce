@@ -1,0 +1,63 @@
+[
+  {
+    "id": 1,
+    "name": "Brownie",
+    "imageName": "h2jpeg.jpeg",
+    "price": 300,
+    "size": "Small",
+    "brand": "Brand A",
+    "description": "Description for Product A"
+  },
+  {
+    "id": 2,
+    "name": "Blackie",
+    "imageName": "h3.webp",
+    "price": 400,
+    "size": "Small",
+    "brand": "Brand A",
+    "description": "Description for Product A"
+  },
+  {
+    "id": 3,
+    "name": "Comfy",
+    "imageName": "h4.jpeg",
+    "price": 900,
+    "brand": "Brand A",
+    "description": "Description for Product A"
+  },
+  {
+    "id": 4,
+    "name": "Snap",
+    "imageName": "h5.jpeg",
+    "price": 700,
+    "brand": "Brand A",
+    "description": "Description for Product A"
+  },
+  {
+    "id": 5,
+    "name": "Snap",
+    "imageName": "h5.jpeg",
+    "price": 700,
+    "size": "Small",
+    "brand": "Brand A",
+    "description": "Description for Product A"
+  },
+  {
+    "id": 6,
+    "name": "Brownie",
+    "imageName": "h2jpeg.jpeg",
+    "price": 300,
+    "size": "Small",
+    "brand": "Brand A",
+    "description": "Description for Product A"
+  },
+  {
+    "id": 7,
+    "name": "Blackie",
+    "imageName": "h3.webp",
+    "price": 400,
+    "size": "Small",
+    "brand": "Brand A",
+    "description": "Description for Product A"
+  }
+]

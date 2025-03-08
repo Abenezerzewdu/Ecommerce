@@ -1,0 +1,60 @@
+/* styles/productsCategory.css */
+.shopbycategory {
+  padding: 16px; /* Padding around the section */
+  background-color: #80838c; /* Light cyan background to complement light blue */
+  margin: 20px;
+  background: linear-gradient(to bottom, #e0f7fa, #ffffff);
+  color: #8c8980; /* Dark teal text color for contrast */
+}
+.shopbycategory.active {
+  background-color: #485159;
+}
+.product-carousel {
+  display: flex; /* Use flexbox for horizontal layout */
+  justify-content: space-between; /* Space out the cards evenly */
+  /* Fixed height for the carousel */
+}
+
+.productscard {
+  flex: 1; /* Each card takes an equal amount of space */
+  margin: 0 8px; /* Margin between cards */
+  transition: transform 0.5s ease; /* Smooth transition for sliding effect */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  border-radius: 8px; /* Rounded corners */
+  background-color: #ffffff; /* White background for cards */
+}
+
+h2 {
+  color: #0a0a0a; /* Complementary color for the section title */
+  text-align: center; /* Center the title */
+  font-size: 30px;
+}
+.viewAll {
+  display: flex;
+  justify-self: end;
+  text-decoration: none;
+  color: #485159;
+}
+.product-carousel {
+  display: flex;
+  overflow: hidden; /* Hide overflow to prevent showing products outside the view */
+  width: 100%; /* Adjust as necessary */
+}
+
+.productscard {
+  transition: transform 1s ease-in-out; /* Smooth transition */
+  width: 100%; /* Ensure cards are full width */
+  flex: 0 0 33.33%; /* Display 3 products */
+}
+
+.slide-in {
+  transform: translateX(0); /* Final position */
+}
+
+.slide-out {
+  transform: translateX(-100%); /* Slide out to the left */
+}
+
+.slide-in-new {
+  transform: translateX(100%); /* Start from the right */
+}

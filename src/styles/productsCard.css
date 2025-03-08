@@ -1,0 +1,96 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+/*.productCard {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 16px;
+  text-align: center;
+  margin: 16px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* src/ProductCard.css */
+.productCard {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 16px;
+  margin: 16px;
+  text-align: center;
+  transition: transform 0.2s;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  width: 300px;
+}
+
+.productCard:hover {
+  transform: scale(1.05); /* Enlarge effect on hover */
+}
+
+.product-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.product-name {
+  font-size: 1.2em;
+  margin: 12px 0;
+}
+
+.product-price {
+  color: #333;
+  margin: 8px 0;
+}
+
+.add-to-cart {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  text-align: center;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  display: none;
+}
+
+.add-to-cart:hover {
+  background-color: #218838; /* Darker green on hover */
+}
+
+/* styles/productsCard.css */
+
+.products-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Ensure even spacing */
+  align-items: center;
+  background-color: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 15px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  height: 300px; /* Fixed height to maintain consistency */
+  transition: transform 0.2s;
+}
+
+.product-image {
+  max-width: 100%;
+  max-height: 150px; /* Set a max height for the image */
+  object-fit: contain; /* Maintain aspect ratio */
+  margin-bottom: 10px; /* Space between image and text */
+}
+
+.product-name {
+  font-size: 1.2em;
+  margin: 10px 0;
+  text-align: center; /* Center the text */
+}
+
+.product-price {
+  font-size: 1em;
+  color: #555;
+}
