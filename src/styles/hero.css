@@ -1,0 +1,17 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+.hero {
+  background: url("../images/Hero.jpg");
+  height: 600px;
+  background-size: cover; /* Ensures the image covers the entire element */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+}
+#buyButton {
+}
