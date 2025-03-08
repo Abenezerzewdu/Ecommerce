@@ -8,23 +8,8 @@ import {
   useLocation,
 } from "react-router-dom";
 import ProductList from "./ProductList"; // Import your ProductList component
-import connectDB from "./config/db";
-import { useEffect } from "react";
 
 function App() {
-  useEffect(() => {
-    // Call the connectDB function to check the connection
-    const checkDatabaseConnection = async () => {
-      try {
-        await connectDB(); // Ensure connectDB returns a promise
-        console.log("Database connected successfully");
-      } catch (error) {
-        console.error("Database connection failed:", error);
-      }
-    };
-
-    checkDatabaseConnection();
-  }, []); // Empty dependency array to run only once on mount
   return (
     <Router>
       <AppContent />
