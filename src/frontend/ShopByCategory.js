@@ -1,20 +1,29 @@
 import React, { useEffect, useState } from "react";
-import ProductsCard from "./ProductsCard";
+import ProductsCard from "./ProductsCard.js";
 import productsData from "./products.json";
 import "./styles/productsCategory.css";
 import { Link } from "react-router-dom";
-
+const importImage = async (imageName) => {
+  const module = await import(`./images/${imageName}`);
+  return module.default || module; // Ensure it gets the string URL
+};
 function ShopByCategory() {
   const [products, setProducts] = useState([]);
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isSliding, setIsSliding] = useState(false);
 
   useEffect(() => {
-    const updatedProducts = productsData.map((product) => ({
-      ...product,
-      image: require(`./images/${product.imageName}`),
-    }));
-    setProducts(updatedProducts);
+    const fetchImages = async () => {
+      const updatedProducts = await Promise.all(
+        productsData.map(async (product) => ({
+          ...product,
+          image: await importImage(product.imageName),
+        }))
+      );
+      setProducts(updatedProducts);
+    };
+
+    fetchImages();
   }, []);
 
   useEffect(() => {

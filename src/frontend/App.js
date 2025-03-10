@@ -1,13 +1,13 @@
-import "./App.css";
-import Hero from "./Hero";
-import ShopByCategory from "./ShopByCategory";
+import "./styles/App.css";
+import Hero from "./Hero.js";
+import ShopByCategory from "./ShopByCategory.js";
 import {
   BrowserRouter as Router,
   Route,
   Routes,
   useLocation,
 } from "react-router-dom";
-import ProductList from "./ProductList"; // Import your ProductList component
+import ProductList from "./ProductList.js"; // Import your ProductList component
 
 function App() {
   return (
