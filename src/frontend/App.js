@@ -8,7 +8,7 @@ import {
   useLocation,
 } from "react-router-dom";
 import ProductList from "./ProductList.js"; // Import your ProductList component
-
+import Navbar from "./Navbar.js";
 function App() {
   return (
     <Router>
@@ -21,7 +21,7 @@ function AppContent() {
   const location = useLocation();
   return (
     <div>
-      {/*<Navbar />  Render the Navbar */}
+      <Navbar />
       {location.pathname === "/" && <Hero />}{" "}
       {/* Only show Hero on the home page */}{" "}
       <Routes>
