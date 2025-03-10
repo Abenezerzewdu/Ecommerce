@@ -14,8 +14,10 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 15px 30px;
-  background-color: #333;
+  background-color: #185a7a;
   color: white;
+  position: fixed;
+  width: 100%;
 }
 
 .logo {

@@ -1,6 +1,7 @@
 // Navbar.js
 import React from "react";
 import "./styles/Navbar.css"; // Make sure to create this CSS file
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
@@ -8,20 +9,20 @@ const Navbar = () => {
       <div className="logo">MyEcommerce</div>
       <ul className="nav-links">
         <li>
-          <a href="#home">Home</a>
+          <Link to="/">Home</Link>
         </li>
         <li>
-          <a href="#products">Products</a>
+          <Link to="/products">Products</Link>
         </li>
         <li>
-          <a href="#about">About Us</a>
+          <Link to="/about">About Us</Link>
         </li>
         <li>
-          <a href="#contact">Contact</a>
+          <Link to="/contact">Contact</Link>
         </li>
       </ul>
       <div className="login-button">
-        <a href="#login">Login</a>
+        <Link to="/login">Login</Link> {/* Change to Link */}
       </div>
     </nav>
   );
